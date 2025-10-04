@@ -1,0 +1,58 @@
+.sidebar {
+  width: 70px;
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  box-shadow: 2px 0 8px var(--shadow-dark);
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-item {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 8px var(--shadow-dark),
+              -4px -4px 8px var(--shadow-light);
+}
+
+.sidebar-item:hover {
+  color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 12px var(--shadow-dark),
+              -6px -6px 12px var(--shadow-light);
+}
+
+.sidebar-item.active {
+  color: var(--accent-primary);
+  background: var(--bg-tertiary);
+  box-shadow: inset 4px 4px 8px var(--shadow-dark),
+              inset -4px -4px 8px var(--shadow-light);
+}
+
+.sidebar-item.active::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height: 30px;
+  background: var(--accent-primary);
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 0 10px var(--accent-primary);
+}
+

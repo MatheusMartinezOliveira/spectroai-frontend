@@ -1,0 +1,47 @@
+{
+  "api": {
+    "baseUrl": "http://localhost:3000/api",
+    "timeout": 10000
+  },
+  "integrations": {
+    "googleCalendar": {
+      "enabled": false,
+      "clientId": "",
+      "clientSecret": ""
+    },
+    "email": {
+      "enabled": false,
+      "provider": "gmail"
+    },
+    "whatsapp": {
+      "enabled": false
+    },
+    "slack": {
+      "enabled": false,
+      "clientId": "",
+      "clientSecret": ""
+    }
+  },
+  "voice": {
+    "speechToText": {
+      "provider": "google",
+      "apiKey": ""
+    },
+    "textToSpeech": {
+      "provider": "google",
+      "apiKey": "",
+      "voice": "pt-BR-Standard-A"
+    },
+    "wakeWords": ["AI", "Spectro"]
+  },
+  "workspace": {
+    "autoLoad": false,
+    "configs": []
+  },
+  "ui": {
+    "defaultTheme": "dark",
+    "language": "pt-BR",
+    "notifications": true
+  }
+}
+

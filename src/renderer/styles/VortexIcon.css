@@ -1,0 +1,101 @@
+.vortex-container {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vortex-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--accent-primary);
+  opacity: 0.3;
+}
+
+.vortex-1 {
+  width: 70px;
+  height: 70px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.vortex-2 {
+  width: 50px;
+  height: 50px;
+  animation: pulse 2s ease-in-out infinite 0.3s;
+}
+
+.vortex-3 {
+  width: 30px;
+  height: 30px;
+  animation: pulse 2s ease-in-out infinite 0.6s;
+}
+
+.vortex-core {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  box-shadow: 0 0 20px var(--accent-primary),
+              inset 0 0 10px var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  position: relative;
+  z-index: 10;
+}
+
+.vortex-core svg {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0 0 5px var(--accent-primary));
+}
+
+/* Active state */
+.vortex-container.active .vortex-circle {
+  animation: spin 1s linear infinite, pulse 2s ease-in-out infinite;
+  opacity: 0.8;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 15px var(--accent-primary);
+}
+
+.vortex-container.active .vortex-core {
+  animation: pulse 0.5s ease-in-out infinite;
+  box-shadow: 0 0 30px var(--accent-primary),
+              inset 0 0 20px var(--accent-primary);
+}
+
+.vortex-container.active .vortex-1 {
+  animation-delay: 0s;
+}
+
+.vortex-container.active .vortex-2 {
+  animation-delay: 0.2s;
+}
+
+.vortex-container.active .vortex-3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

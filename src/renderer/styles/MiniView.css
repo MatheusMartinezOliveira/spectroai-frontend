@@ -1,0 +1,15 @@
+.mini-view {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.mini-view:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
