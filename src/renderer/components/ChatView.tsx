@@ -13,7 +13,7 @@ const ChatView: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Olá! Sou o Spectro AI, seu assistente pessoal. Como posso ajudar você hoje?',
+      text: 'Olá! Sou o Elarix AI, seu assistente pessoal. Como posso ajudar você hoje?',
       sender: 'ai',
       timestamp: new Date()
     }
@@ -75,7 +75,7 @@ const ChatView: React.FC = () => {
   return (
     <div className="chat-view">
       <div className="chat-header">
-        <h2>Chat com Spectro AI</h2>
+        <h2>Chat com Elarix AI</h2>
       </div>
       
       <div className="chat-messages">

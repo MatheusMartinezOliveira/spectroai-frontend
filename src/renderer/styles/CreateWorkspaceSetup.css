@@ -1,0 +1,425 @@
+.create-workspace-setup {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+}
+
+.create-workspace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-workspace-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.create-workspace-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.create-workspace-header .close-btn:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+.create-workspace-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-section label {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.workspace-name-input {
+  padding: 12px 16px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 15px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.workspace-name-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Apps Section */
+.apps-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 0;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.apps-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apps-section-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.refresh-btn {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.refresh-btn:hover:not(:disabled) {
+  background: var(--hover-bg);
+}
+
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  transition: all 0.2s;
+}
+
+.search-box:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.search-box svg {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+}
+
+.selected-count {
+  color: var(--text-secondary);
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Apps List */
+.apps-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+.app-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--bg-secondary);
+}
+
+.app-item:hover {
+  border-color: var(--primary-color);
+  background: var(--hover-bg);
+}
+
+.app-item.selected {
+  border-color: var(--primary-color);
+  background: rgba(0, 123, 255, 0.05);
+}
+
+.app-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--text-primary);
+  transition: transform 0.2s;
+}
+
+.app-item:hover .app-icon {
+  transform: scale(1.1);
+}
+
+/* Cores específicas para ícones de apps conhecidos */
+.app-item svg.app-icon[class*="SiGooglechrome"] {
+  color: #4285F4;
+}
+
+.app-item svg.app-icon[class*="SiMicrosoftedge"] {
+  color: #0078D7;
+}
+
+.app-item svg.app-icon[class*="SiFirefox"] {
+  color: #FF7139;
+}
+
+.app-item svg.app-icon[class*="SiVisualstudiocode"] {
+  color: #007ACC;
+}
+
+.app-item svg.app-icon[class*="SiSpotify"] {
+  color: #1DB954;
+}
+
+.app-item svg.app-icon[class*="SiDiscord"] {
+  color: #5865F2;
+}
+
+.app-item svg.app-icon[class*="SiSlack"] {
+  color: #E01E5A;
+}
+
+.app-item svg.app-icon[class*="SiNotion"] {
+  color: #000000;
+}
+
+[data-theme="dark"] .app-item svg.app-icon[class*="SiNotion"] {
+  color: #FFFFFF;
+}
+
+.app-item svg.app-icon[class*="SiObsidian"] {
+  color: #7C3AED;
+}
+
+.app-item svg.app-icon[class*="SiFigma"] {
+  color: #F24E1E;
+}
+
+.app-item svg.app-icon[class*="SiAdobephotoshop"] {
+  color: #31A8FF;
+}
+
+.app-item svg.app-icon[class*="SiAdobeillustrator"] {
+  color: #FF9A00;
+}
+
+.app-item svg.app-icon[class*="SiPostman"] {
+  color: #FF6C37;
+}
+
+.app-item svg.app-icon[class*="SiDocker"] {
+  color: #2496ED;
+}
+
+.app-item svg.app-icon[class*="SiNvidia"] {
+  color: #76B900;
+}
+
+.app-item input[type="checkbox"] {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.app-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.app-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-info strong {
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.window-count-badge {
+  background: #6366f1;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.workspace-badge {
+  background: var(--primary-color);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.app-path {
+  color: var(--text-secondary);
+  font-size: 12px;
+  word-break: break-all;
+}
+
+/* Loading and No Apps States */
+.loading-apps,
+.no-apps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: var(--text-secondary);
+  min-height: 200px;
+}
+
+.loading-apps svg {
+  color: var(--primary-color);
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.cancel-btn {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+}
+
+.cancel-btn:hover {
+  background: var(--hover-bg);
+}
+
+.save-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.save-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.save-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Scrollbar styling */
+.apps-list::-webkit-scrollbar {
+  width: 2px;
+}
+
+.apps-list::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 2px;
+}
+
+.apps-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+.apps-list::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Spinning animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}

@@ -1,6 +1,6 @@
-# Spectro AI - Assistente IA Desktop
+# Elarix AI - Assistente IA Desktop
 
-Spectro AI é um assistente IA desktop desenvolvido em Electron que auxilia profissionais no dia a dia com automações inteligentes, integrações com ferramentas de produtividade e pré-configurações para agilizar o setup do Windows.
+Elarix AI é um assistente IA desktop desenvolvido em Electron que auxilia profissionais no dia a dia com automações inteligentes, integrações com ferramentas de produtividade e pré-configurações para agilizar o setup do Windows.
 
 ## 🚀 Funcionalidades
 
@@ -9,7 +9,7 @@ Spectro AI é um assistente IA desktop desenvolvido em Electron que auxilia prof
 **Modo Minimizado:**
 - Ícone "vortex" no canto superior direito da tela
 - Sempre em escuta aguardando comandos de voz
-- Ativação por voz ("AI" ou "Spectro") ou Ctrl+Space
+- Ativação por voz ("AI" ou "Elarix") ou Ctrl+Space
 - Animação visual durante gravação
 
 **Modo Expandido:**
@@ -45,7 +45,7 @@ Spectro AI é um assistente IA desktop desenvolvido em Electron que auxilia prof
 git clone <repository-url>
 
 # Entre no diretório
-cd spectroai-electron
+cd elarixai-electron
 
 # Instale as dependências
 yarn install
@@ -81,7 +81,7 @@ yarn dev:build-only
 
 2. **No Windows PowerShell** - Execute:
 ```powershell
-cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\spectroai-electron
+cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\elarixai-electron
 .\run-windows.ps1
 ```
 
@@ -98,7 +98,7 @@ O design segue princípios de:
 ## 📁 Estrutura do Projeto
 
 ```
-spectroai-electron/
+elarixai-electron/
 ├── src/
 │   ├── main/           # Processo principal do Electron
 │   ├── preload/        # Scripts de preload
@@ -133,5 +133,5 @@ MIT
 
 ---
 
-Desenvolvido com ❤️ pela equipe Spectro AI
+Desenvolvido com ❤️ pela equipe Elarix AI
 

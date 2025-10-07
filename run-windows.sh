@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script para executar no Windows a partir do WSL
 
-echo "🚀 Spectro AI - Preparando para executar no Windows..."
+echo "🚀 Elarix AI - Preparando para executar no Windows..."
 echo ""
 
 # Compilar o projeto
@@ -18,7 +18,7 @@ echo "✅ Compilação concluída!"
 echo ""
 echo "📋 Agora execute no PowerShell do Windows:"
 echo ""
-echo "   cd \\\\wsl\$\\Ubuntu\\home\\matheus\\dev\\copia_projeto_dueloia\\spectroai-electron"
+echo "   cd \\\\wsl\$\\Ubuntu\\home\\matheus\\dev\\copia_projeto_dueloia\\elarixai-electron"
 echo "   yarn install"
 echo "   yarn start"
 echo ""

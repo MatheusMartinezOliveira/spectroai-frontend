@@ -1,7 +1,7 @@
-# Spectro AI - Script de Execução no Windows
+# Elarix AI - Script de Execução no Windows
 # Execute este script no PowerShell do Windows enquanto o build roda no WSL
 
-Write-Host "🚀 Spectro AI - Iniciando no Windows..." -ForegroundColor Cyan
+Write-Host "🚀 Elarix AI - Iniciando no Windows..." -ForegroundColor Cyan
 Write-Host ""
 
 # Verificar se Node.js está instalado
@@ -39,7 +39,7 @@ if (!(Test-Path "dist/main.js")) {
 }
 
 # Executar Electron
-Write-Host "🎯 Iniciando Spectro AI..." -ForegroundColor Cyan
+Write-Host "🎯 Iniciando Elarix AI..." -ForegroundColor Cyan
 Write-Host "   Aguarde a janela abrir..." -ForegroundColor Gray
 Write-Host ""
 Write-Host "💡 Dica: Deixe o 'yarn dev:build-only' rodando no WSL para hot reload!" -ForegroundColor Yellow

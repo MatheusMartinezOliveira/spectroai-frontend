@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FiCalendar, FiMail, FiMessageCircle, FiSlack, FiMonitor } from 'react-icons/fi';
+import { FiCalendar, FiMail, FiMessageCircle, FiSlack } from 'react-icons/fi';
+import WorkspaceSetupView from './WorkspaceSetupView';
 import '../styles/SettingsView.css';
 
 const SettingsView: React.FC = () => {
@@ -61,26 +62,7 @@ const SettingsView: React.FC = () => {
             />
           </div>
         ) : (
-          <div className="workspace-setup">
-            <h3>Setup de Workspace</h3>
-            <p className="workspace-description">
-              Configure quais aplicativos devem ser abertos automaticamente ao iniciar seu workspace.
-            </p>
-            
-            <button className="workspace-btn primary">
-              <FiMonitor size={20} />
-              <span>Abrir Workspace Setup</span>
-            </button>
-            
-            <div className="workspace-info">
-              <h4>Como funciona?</h4>
-              <ul>
-                <li>Salve a configuração atual dos seus aplicativos abertos</li>
-                <li>Restaure todos os apps com um clique ao iniciar o Windows</li>
-                <li>Economize tempo configurando tudo automaticamente</li>
-              </ul>
-            </div>
-          </div>
+          <WorkspaceSetupView onClose={() => setActiveTab('integrations')} />
         )}
       </div>
     </div>

@@ -1,0 +1,481 @@
+.workspace-setup-view {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background: var(--bg-secondary);
+}
+
+.workspace-setup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.workspace-setup-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.workspace-setup-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.workspace-setup-header .close-btn:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+/* Info Section */
+.workspace-info-section {
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.info-icon {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.info-content h3 {
+  margin: 0 0 10px 0;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.info-content ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-secondary);
+}
+
+.info-content ul li {
+  margin: 5px 0;
+}
+
+/* Workspaces List */
+.workspaces-list {
+  margin-bottom: 30px;
+}
+
+.workspaces-list h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.workspaces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+@media (min-width: 900px) {
+  .workspaces-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+.workspace-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s;
+}
+
+.workspace-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.workspace-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.workspace-card-header h4 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.apps-count {
+  background: var(--primary-color);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.workspace-card-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+  min-height: 28px;
+}
+
+.app-tag {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.app-tag.more {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.workspace-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.launch-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.launch-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.launch-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.close-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.close-btn:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+.close-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.edit-btn {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  flex: 0;
+  padding: 8px;
+}
+
+.edit-btn:hover {
+  background: var(--hover-bg);
+}
+
+.delete-btn {
+  background: var(--bg-secondary);
+  color: #ef4444;
+  border: 1px solid var(--border-color);
+  flex: 0;
+  padding: 8px;
+}
+
+.delete-btn:hover {
+  background: #fef2f2;
+  border-color: #ef4444;
+}
+
+/* Create Workspace Section */
+.create-workspace-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.create-workspace-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+}
+
+.create-workspace-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Launch Modal */
+.launch-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.launch-modal {
+  background: var(--bg-primary);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.launch-modal-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.launch-modal-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 20px;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.close-modal-btn:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+.launch-progress-list {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.progress-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: var(--bg-secondary);
+  align-items: flex-start;
+}
+
+.progress-item svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.progress-item.launching {
+  border-left: 3px solid #3b82f6;
+}
+
+.progress-item.launching svg {
+  color: #3b82f6;
+}
+
+.progress-item.success {
+  border-left: 3px solid #10b981;
+}
+
+.progress-item.success svg {
+  color: #10b981;
+}
+
+.progress-item.error {
+  border-left: 3px solid #ef4444;
+}
+
+.progress-item.error svg {
+  color: #ef4444;
+}
+
+.progress-item.already_running {
+  border-left: 3px solid #f59e0b;
+}
+
+.progress-item.already_running svg {
+  color: #f59e0b;
+}
+
+.progress-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.progress-info strong {
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.progress-message {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.launch-summary {
+  padding: 20px;
+  margin: 0 20px 20px 20px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+  border: 2px solid #10b981;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.summary-icon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.summary-content h4 {
+  margin: 0 0 8px 0;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.summary-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.launch-modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-modal-btn-primary {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.close-modal-btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.cancel-launch-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cancel-launch-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+/* Spinning animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .delete-btn:hover {
+  background: #7f1d1d;
+}

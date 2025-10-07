@@ -1,11 +1,12 @@
 {
-  "name": "spectroai-electron",
+  "name": "elarixai-electron",
   "version": "1.0.0",
-  "description": "Spectro AI - Assistente IA Desktop",
+  "description": "Elarix AI - Assistente IA Desktop",
   "main": "dist/main/main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "concurrently -k \"yarn build:main:watch\" \"yarn build:preload:watch\" \"yarn build:renderer:watch\" \"yarn start:electron\"",
+    "clean": "node -e \"try{require('fs').rmSync('dist',{recursive:true,force:true})}catch(e){}\"",
+    "dev": "yarn clean && concurrently -k \"yarn build:main:watch\" \"yarn build:preload:watch\" \"yarn build:renderer:watch\" \"yarn start:electron\"",
     "dev:build-only": "concurrently -k \"yarn build:main:watch\" \"yarn build:preload:watch\" \"yarn build:renderer:watch\"",
     "start:electron": "wait-on dist/main/main.js dist/preload/preload/preload.js dist/renderer/index.html && electron .",
     "build": "yarn build:main && yarn build:preload && yarn build:renderer",
@@ -21,9 +22,9 @@
     "electron",
     "ai",
     "assistant",
-    "spectro"
+    "elarix"
   ],
-  "author": "Spectro AI Team",
+  "author": "Elarix AI Team",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.10.0",
@@ -51,8 +52,8 @@
     "react-icons": "^4.12.0"
   },
   "build": {
-    "appId": "com.spectroai.app",
-    "productName": "Spectro AI",
+    "appId": "com.elarixai.app",
+    "productName": "Elarix AI",
     "directories": {
       "output": "release"
     },

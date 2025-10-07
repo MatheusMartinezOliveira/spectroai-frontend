@@ -37,7 +37,7 @@ const TitleBar: React.FC = () => {
   return (
     <div className="title-bar">
       <div className="title-bar-left">
-        <span className="app-title">Spectro AI</span>
+        <span className="app-title">Elarix AI</span>
       </div>
       <div className="title-bar-right">
         <button className="title-bar-btn" onClick={toggleTheme}>

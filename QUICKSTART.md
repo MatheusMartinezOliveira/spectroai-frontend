@@ -1,4 +1,4 @@
-# 🚀 Guia de Início Rápido - Spectro AI
+# 🚀 Guia de Início Rápido - Elarix AI
 
 ## 📋 Pré-requisitos
 
@@ -11,7 +11,7 @@
 ### 1. Instalar Dependências
 
 ```bash
-cd /home/matheus/dev/copia_projeto_dueloia/spectroai-electron
+cd /home/matheus/dev/copia_projeto_dueloia/elarixai-electron
 yarn install
 ```
 
@@ -44,11 +44,11 @@ yarn package
 
 ### Modo Minimizado (Padrão)
 
-Ao iniciar, o Spectro AI abre em **modo minimizado** com um ícone "vortex" no canto superior direito:
+Ao iniciar, o Elarix AI abre em **modo minimizado** com um ícone "vortex" no canto superior direito:
 
 - **Click no ícone**: Expande para o modo completo
 - **Ctrl+Space**: Ativa gravação de voz (animação do vortex)
-- **Comando de voz**: "AI" ou "Spectro" (a implementar)
+- **Comando de voz**: "AI" ou "Elarix" (a implementar)
 
 ### Modo Expandido
 
@@ -117,7 +117,7 @@ Interface clara com accent em ciano mais suave.
 ## 📁 Arquivos Importantes
 
 ```
-spectroai-electron/
+elarixai-electron/
 ├── src/
 │   ├── main/main.ts           # Gerenciamento de janelas
 │   ├── preload/preload.ts     # Bridge IPC seguro
@@ -211,5 +211,5 @@ Em caso de dúvidas ou problemas:
 
 ---
 
-**Desenvolvido com ❤️ pela equipe Spectro AI**
+**Desenvolvido com ❤️ pela equipe Elarix AI**
 

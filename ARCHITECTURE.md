@@ -1,12 +1,12 @@
-# Arquitetura do Spectro AI
+# Arquitetura do Elarix AI
 
 ## 📐 Visão Geral
 
-O Spectro AI é uma aplicação Electron dividida em três processos principais:
+O Elarix AI é uma aplicação Electron dividida em três processos principais:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      SPECTRO AI                              │
+│                      ELARIX AI                               │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
 │  ┌────────────────┐  ┌─────────────┐  ┌─────────────────┐  │
@@ -31,7 +31,7 @@ O Spectro AI é uma aplicação Electron dividida em três processos principais:
 ## 🏗️ Estrutura de Pastas
 
 ```
-spectroai-electron/
+elarixai-electron/
 │
 ├── src/
 │   ├── main/                     # Processo principal do Electron
@@ -187,7 +187,7 @@ Usuario digita mensagem
 
 ### Backend API (REST)
 ```typescript
-interface SpectroAPI {
+interface ElarixAPI {
   // Chat
   sendMessage(text: string): Promise<AIResponse>;
   sendAudio(blob: Blob): Promise<AIResponse>;

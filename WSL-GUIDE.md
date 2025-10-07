@@ -1,4 +1,4 @@
-# 🐧 Guia: Rodando Spectro AI no Windows via WSL
+# 🐧 Guia: Rodando Elarix AI no Windows via WSL
 
 ## 🚨 O Problema
 
@@ -25,7 +25,7 @@ sudo apt install -y libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils lib
 
 #### Rodar o app:
 ```bash
-cd /home/matheus/dev/copia_projeto_dueloia/spectroai-electron
+cd /home/matheus/dev/copia_projeto_dueloia/elarixai-electron
 yarn dev
 ```
 
@@ -37,7 +37,7 @@ Esta é a opção **mais prática e que funciona sempre**!
 
 #### 1️⃣ No WSL: Apenas compilar o código
 ```bash
-cd /home/matheus/dev/copia_projeto_dueloia/spectroai-electron
+cd /home/matheus/dev/copia_projeto_dueloia/elarixai-electron
 
 # Deixa compilando em watch mode
 yarn dev:build-only
@@ -46,7 +46,7 @@ yarn dev:build-only
 #### 2️⃣ No Windows: Abrir PowerShell ou CMD
 ```powershell
 # Navegar para a pasta (ajuste o caminho)
-cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\spectroai-electron
+cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\elarixai-electron
 
 # Instalar dependências (primeira vez)
 yarn install
@@ -102,7 +102,7 @@ A opção mais simples se você quer evitar problemas com WSL.
 #### 2️⃣ Abrir PowerShell ou CMD:
 ```powershell
 # Navegar para pasta do projeto
-cd C:\caminho\para\spectroai-electron
+cd C:\caminho\para\elarixai-electron
 
 # Instalar dependências
 yarn install
@@ -188,7 +188,7 @@ Execute o comando de diagnóstico:
 
 ```bash
 # No WSL
-cd /home/matheus/dev/copia_projeto_dueloia/spectroai-electron
+cd /home/matheus/dev/copia_projeto_dueloia/elarixai-electron
 yarn build
 yarn start
 

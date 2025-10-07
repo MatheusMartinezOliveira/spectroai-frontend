@@ -1,10 +1,10 @@
-# ⚡ Início Rápido - Spectro AI no WSL
+# ⚡ Início Rápido - Elarix AI no WSL
 
 ## 🎯 Solução Mais Simples (Recomendada)
 
 ### Passo 1: No WSL (Terminal Atual) 🐧
 ```bash
-cd /home/matheus/dev/copia_projeto_dueloia/spectroai-electron
+cd /home/matheus/dev/copia_projeto_dueloia/elarixai-electron
 
 # Deixa compilando (não feche este terminal)
 yarn dev:build-only
@@ -19,7 +19,7 @@ yarn dev:build-only
 Opção A - **Usando o Script Automático:**
 ```powershell
 # Navegue até a pasta (copie e cole)
-cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\spectroai-electron
+cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\elarixai-electron
 
 # Execute o script
 .\run-windows.ps1
@@ -28,7 +28,7 @@ cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\spectroai-electron
 Opção B - **Manual:**
 ```powershell
 # Navegue até a pasta
-cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\spectroai-electron
+cd \\wsl$\Ubuntu\home\matheus\dev\copia_projeto_dueloia\elarixai-electron
 
 # Instale dependências (primeira vez)
 yarn install
@@ -113,7 +113,7 @@ yarn build
 Quando você rodar `yarn start` no Windows, vai ver:
 
 ```
-🚀 Spectro AI iniciando...
+🚀 Elarix AI iniciando...
 📁 Diretório: C:\...\dist
 🖥️ Plataforma: win32
 ⏳ Aguardando Electron ficar pronto...
@@ -172,7 +172,7 @@ Consulte o guia completo com outras opções: [WSL-GUIDE.md](./WSL-GUIDE.md)
 Ou execute o diagnóstico:
 ```bash
 # No WSL
-cd /home/matheus/dev/copia_projeto_dueloia/spectroai-electron
+cd /home/matheus/dev/copia_projeto_dueloia/elarixai-electron
 yarn build
 echo "✅ Se chegou aqui, o build está OK!"
 ```
